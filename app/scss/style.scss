@@ -1,0 +1,311 @@
+$font-primary: 'Open Sans', Arial, sans-serif;
+$font-secondary: "Bad Script", cursive;
+
+// Overrides
+$grid-gutter-width: 40px;
+$border-radius-base: 4px;
+$padding-base-vertical: 14px;
+
+$brand-primary: #F5F5DC;
+$brand-secondary: #BEBD7F;
+$brand-third: #8A6642;
+
+$brand-white: #fff;
+$brand-black: #0A0A0A;
+$brand-lighter: #848484;
+$brand-darker: #5a5a5a;
+$brand-selection-color: $brand-primary;
+$brand-body-color: #fcfcfc;
+$brand-body-bg: #F5F5DC;
+
+// Mixin
+
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin border() {
+  border: 3px solid $brand-third;
+  border-radius: 5px;
+}
+
+// Import
+@import 'bootstrap/mixins';
+@import 'bootstrap/variables';
+@import "../../bourbon/bourbon";
+/* =======================================================
+*
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
+
+// Template Base
+
+.icon {
+  font-size: 23px;
+  color: $brand-third;
+  margin-right: 10px;
+}
+
+.fa {
+  color: $brand-third;
+}
+
+.btn-primary {
+  background-color: $brand-third;
+  border: 2px solid $brand-third;
+  border-radius: 10px;
+  color: $brand-body-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 2px solid $brand-third;
+    color: $brand-third;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+  font-size: 16px;
+  background: $brand-body-bg;
+  color: #848484;
+  font-weight: 300;
+  overflow-x: hidden;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  @include transition(.5s, ease);
+}
+
+ul, ol {
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  color: $brand-lighter;
+  // font-weight: 300;
+  font-family: $font-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $brand-third;
+  font-family: $font-primary;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+::-moz-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.call_modal {
+  width: 450px;
+  height: 550px;
+  padding: 100px;
+  background: url(../img/callback.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  input, textarea {
+    @include border;
+    margin-bottom: 30px;
+    width: 95%;
+    background: transparent;
+    color: $brand-third;
+    box-shadow: none;
+    font-size: 50px;
+  }
+  input {
+    height: 50px;
+  }
+  input[placeholder],
+  textarea[placeholder] {
+    font-size: 16px;
+    text-overflow: ellipsis;
+
+  }
+  .btn_phone {
+    position: relative;
+    @include center;
+    margin-left: 10%;
+  }
+  h3 {
+    margin-top: 20px;
+    font-size: 26px;
+    color: $brand-primary;
+    text-align: center;
+    display: none;
+  }
+}
+
+.main_header {
+  @include image-rendering(optimizeSpeed);
+  padding-bottom: 50px;
+  min-height: 400px;
+  background-color: $brand-primary;
+  .main_logo {
+    margin: 30px 0 0 50px;
+  }
+  .main-contacts {
+    height: 500px;
+    background: url(../img/contacts2.svg) no-repeat !important;
+    background-size: cover;
+    padding: 80px 0 0 120px;
+    margin-top: 20px;
+    .header_address {
+      p {
+        color: $brand-third;
+        font-size: 25px;
+      }
+    }
+    .header_phone {
+      display: block;
+      p {
+        color: $brand-third;
+        font-size: 35px;
+      }
+    }
+    .header_mobile {
+      display: block;
+
+      p {
+        color: $brand-third;
+        font-size: 35px;
+        i {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.btn_phone {
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 8%;
+  background-color: $brand-third;
+  border: 2px solid $brand-third;
+  border-radius: 10px;
+  color: $brand-body-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 2px solid $brand-third;
+    color: $brand-third;
+    margin: 0;
+  }
+}
+
+.navbar {
+  top: 20%;
+  background: $brand-primary;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  @include border;
+  .navbar-header {
+    .navbar-toggle {
+      background: $brand-third;
+      .icon-bar {
+        background-color: $brand-primary;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+  .nav_wrapper {
+    position: relative;
+    float: none;
+    @include center;
+    display: inline-block;
+    .navbar-nav {
+      float: none;
+      li {
+        padding: 0 15px;
+        float: right;
+        &:hover {
+          background: $brand-third;
+        }
+        a {
+          font-size: 18px;
+          text-transform: uppercase;
+          color: $brand-third;
+          &:hover {
+            color: $brand-body-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  position: absolute;
+  left: 5%;
+  background: url("../img/fon50.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  .features {
+    margin: 100px 0;
+    padding-top: 450px;
+    .item {
+      p {
+        display: inline-block;
+        position: absolute;
+        bottom: 15%;
+        right: 12%;
+        transform: rotate(10deg);
+        font-size: 35px;
+        color: $brand-black;
+        font-family:  $font-secondary;
+      }
+    }
+  }
+  .supply {
+    position: relative;
+    width: 1700px;
+    height: 1200px;
+    background: url("../img/blackboard.png") no-repeat;
+    background-size: contain;
+    @include center;
+    .s_text {
+      position: absolute;
+      top: 24%;
+      right: 25%;
+      display: inline-block;
+      width: 800px;
+      font-size: 40px;
+      font-family: $font-secondary;
+      color: #ffffff;
+    }
+  }
+}
+
+

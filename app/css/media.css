@@ -1,0 +1,119 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1787px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .navbar {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1226px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1068px) {
+
+}
+/* iPad Air Retina landscape */
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 782px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 90%;
+    }
+    .main-contacts {
+        padding: 8px;
+    }
+    .nav_wrapper .navbar-nav li a {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .main-contacts .header_phone p {
+        font-size: 20px;
+    }
+    .main-contacts .header_address p {
+        font-size: 16px;
+    }
+    .main-contacts .btn_phone {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+}
+/* iPad Air Retina portrait */
+@media only screen and (max-width: 672px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+     .main_logo img {
+         width: 300px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    .about .lenta {
+        height: 82px;
+    }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}
