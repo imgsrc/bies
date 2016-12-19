@@ -106,12 +106,13 @@ section {
     display: none; }
 
 .main_header {
+  position: relative;
   image-rendering: optimizeSpeed;
   padding-bottom: 50px;
   min-height: 400px;
   background-color: #F5F5DC; }
   .main_header .main_logo {
-    margin: 30px 0 0 50px; }
+    margin: 150px 200px 50px 0; }
   .main_header .main-contacts {
     height: 500px;
     background: url(../img/contacts2.svg) no-repeat !important;
@@ -190,14 +191,24 @@ section {
 
 .about {
   position: absolute;
-  left: 5%;
+  width: 100%;
   background: url("../img/fon50.png") no-repeat;
   background-size: cover;
   text-align: center; }
   .about .features {
     margin: 100px 0;
     padding-top: 450px; }
-    .about .features .item p {
+    .about .features .sticker i {
+      position: absolute;
+      bottom: 53%;
+      right: 28%;
+      z-index: 5;
+      color: #0A0A0A;
+      font-size: 70px;
+      -webkit-transform: rotate(10deg);
+          -ms-transform: rotate(10deg);
+              transform: rotate(10deg); }
+    .about .features .sticker p {
       display: inline-block;
       position: absolute;
       bottom: 15%;

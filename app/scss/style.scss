@@ -160,12 +160,13 @@ section {
 }
 
 .main_header {
+  position: relative;
   @include image-rendering(optimizeSpeed);
   padding-bottom: 50px;
   min-height: 400px;
   background-color: $brand-primary;
   .main_logo {
-    margin: 30px 0 0 50px;
+    margin: 150px 200px 50px 0;
   }
   .main-contacts {
     height: 500px;
@@ -268,14 +269,23 @@ section {
 
 .about {
   position: absolute;
-  left: 5%;
+  width: 100%;
   background: url("../img/fon50.png") no-repeat;
   background-size: cover;
   text-align: center;
   .features {
     margin: 100px 0;
     padding-top: 450px;
-    .item {
+    .sticker {
+      i {
+        position: absolute;
+        bottom: 53%;
+        right: 28%;
+        z-index: 5;
+        color: $brand-black;
+        font-size: 70px;
+        transform: rotate(10deg);
+      }
       p {
         display: inline-block;
         position: absolute;
