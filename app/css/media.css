@@ -9,41 +9,38 @@
     .main_header {
         padding-bottom: 30px;
     }
+    .about {
+        bottom: -30px
+    }
     .about .supply {
         width: 1200px;
+        height: 800px;
+        /*bottom: -273px;*/
     }
+
     .about .supply .s_text {
-        top: 16%;
+        top: 25%;
         right: 19%;
         width: 720px;
         font-size: 32px;
     }
+
     .about .features {
         margin: 0 50px;
-    }
-    .about .sticker p {
-
-    }
-    .about .sticker i {
-
     }
     .main_header .main_logo img {
         width: 600px;
     }
+
     .navbar {
-        width: 80%;
+        width: 90%;
         top: 30px;
     }
-    .navbar .nav_wrapper .navbar-nav li{
-        float: left;
-        padding: 0 15px;
-    }
-    .navbar .nav_wrapper .navbar-nav li a {
-        font-size: 15px;
-        font-weight: 400;
+    .call_modal .btn_phone {
+        left: 24%;
+        bottom: 20%;
     }
 }
-
 
 @media only screen and (max-width: 1280px) {
     .navbar {
@@ -62,6 +59,7 @@
 @media only screen and (max-width: 1068px) {
 
 }
+
 /* iPad Air Retina landscape */
 @media only screen and (max-width: 1024px) {
     .navbar {
@@ -89,7 +87,40 @@
 
 @media only screen and (max-width: 768px) {
 
-    .main_header .main_logo{
+    .about {
+        background: none;
+    }
+    .about .features {
+        padding-top: 50px;
+    }
+    .about .features .sticker p {
+        font-size: 25px;
+    }
+    .about .features .sticker p.st-1,
+    .about .features .sticker p.st-2 {
+        right: 25%;
+    }
+    .about .features .sticker p.st-3,
+    .about .features .sticker p.st-4 {
+        right: 17%;
+    }
+    .about .features .sticker i {
+        right: 34%;
+    }
+    .about .supply {
+        width: 100%;
+        height: 600px;
+    }
+    .about .supply .s_text {
+        font-size: 20px;
+        right: 20%;
+        top: 22%;
+        width: 450px;
+    }
+    .about .features img {
+        width: 300px;
+    }
+    .main_header .main_logo {
         margin: 95px 200px 50px 0;
     }
     .main_header .main_logo img {
@@ -99,13 +130,14 @@
         font-size: 15px;
     }
     .main_header .main-contacts .header_phone p,
-    .main_header .main-contacts .header_mobile p{
+    .main_header .main-contacts .header_mobile p {
         font-size: 25px;
     }
     .main_header .main-contacts {
         padding: 45px 0 0 53px;
+        height: 280px;
     }
-    .btn_phone {
+    .main_header .btn_phone {
         font-size: 13px;
         font-weight: 400;
         left: 8%;
@@ -113,14 +145,21 @@
         position: relative;
         top: 0;
     }
-    .navbar .nav_wrapper .navbar-nav li{
+    .navbar .nav_wrapper .navbar-nav li {
         float: left;
         padding: 0;
     }
     .navbar .nav_wrapper .navbar-nav li a {
         font-size: 13px;
     }
+    .contacts {
+        background: none;
+    }
+    .contacts .b_contacts {
+        margin-top: 50px;
+    }
 }
+
 /* iPad Air Retina portrait */
 @media only screen and (max-width: 672px) {
 
@@ -128,19 +167,134 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-     .main_logo img {
-         width: 300px;
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
+
+
+    .main_header .main-contacts {
+        height: 350px;
+        padding: 40px 0 0 80px;
     }
 
+    .main_header .main_logo {
+        display: none;
+    }
+    .main_header .main-contacts .header_address p {
+        font-size: 18px;
+    }
+
+    .main_header .main-contacts .header_phone p,
+    .main_header .main-contacts .header_mobile p {
+        font-size: 30px;
+    }
+
+    .main_header .btn_phone {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        left: 4%;
+        line-height: 18px;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .main_header .main-contacts {
+        padding: 22px 0 0 50px;
+        height: 320px;
+    }
+    .main_header .btn_phone {
+        left: 4%;
+    }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-    .about .lenta {
-        height: 82px;
+    .about .features {
+        padding-top: 20px;
+        margin-left: -10px;
+    }
+    .about .features .sticker p.st-1 {
+        right: 6%;
+    }
+
+    .about .supply {
+        width: 100%;
+        background: none;
+    }
+    .about .supply .s_text {
+        font-size: 20px;
+        width: 100%;
+        position: static;
+        padding: 20px 10px;
+        margin: 40px 10px;
+        color: #8a6642;
+        border: 2px solid #8A6642;
+        border-radius: 10px;
+    }
+    .main_header .main-contacts {
+        height: 240px;
+    }
+    .main_header .main-contacts .header_address p {
+        font-size: 13px;
+    }
+
+    .main_header .main-contacts .header_phone p,
+    .main_header .main-contacts .header_mobile p {
+        font-size: 20px;
+    }
+
+    .main_header .btn_phone {
+        font-size: 12px;
+        font-weight: 400;
+        left: 0;
+        line-height: 18px;
+        position: relative;
+        top: 0;
+        margin-top: 0;
+    }
+    .call_modal{
+        width: 300px;
+        top: 8%;
+        padding: 80px 45px 0 55px;
+    }
+    .call_modal input,
+    .call_modal textarea {
+        margin-bottom: 25px;
+        font-size: 40px;
+    }
+    .call_modal .btn_phone {
+        bottom: 44%;
+        left: 19%;
+    }
+    .call_modal input {
+        height: 30px;
+    }
+    .call_modal h3 {
+        font-size: 14px;
+        margin-top: -2px;
+    }
+    .navbar .nav_wrapper .navbar-nav li {
+        float: none;
+    }
+    .contacts .b_contacts {
+        margin-top: 0;
+        font-size: 22px;
+
+    }
+    .contacts .b_contacts .icon {
+        font-size: 25px;
+    }
+    .contacts .b_form {
+        width: 300px;
+    }
+    .contacts .b_form input {
+        width: 100%;
+    }
+    .contacts .b_form input {
+        margin-bottom: 15px;
+    }
+    .contacts .b_form textarea {
+        margin-bottom: 40px;
     }
 }
 

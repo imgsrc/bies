@@ -1,5 +1,7 @@
-$font-primary: 'Open Sans', Arial, sans-serif;
+$font-primary: "Open Sans", Arial, sans-serif;
 $font-secondary: "Bad Script", cursive;
+$font-3: "Ruslan Display", cursive;
+$font-4: "Philosopher", sans-serif;
 
 // Overrides
 $grid-gutter-width: 40px;
@@ -115,6 +117,23 @@ figure {
   background: $brand-selection-color;
 }
 
+.btn_phone {
+  display: inline-block;
+  background-color: $brand-third;
+  border: 2px solid $brand-third;
+  border-radius: 10px;
+  color: $brand-body-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 2px solid $brand-third;
+    color: $brand-third;
+  }
+}
+
 section {
   margin-bottom: 30px;
 }
@@ -124,7 +143,7 @@ section {
   height: 550px;
   padding: 100px;
   background: url(../img/callback.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
   margin: auto;
   input, textarea {
@@ -146,14 +165,13 @@ section {
 
   }
   .btn_phone {
-    position: relative;
-    @include center;
+    position: absolute;
     margin-left: 10%;
   }
   h3 {
     margin-top: 20px;
     font-size: 26px;
-    color: $brand-primary;
+    color: $brand-third;
     text-align: center;
     display: none;
   }
@@ -199,28 +217,14 @@ section {
       }
     }
   }
-}
-
-.btn_phone {
-  display: inline-block;
-  position: relative;
-  top: 10%;
-  left: 8%;
-  background-color: $brand-third;
-  border: 2px solid $brand-third;
-  border-radius: 10px;
-  color: $brand-body-color;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    border: 2px solid $brand-third;
-    color: $brand-third;
-    margin: 0;
+  .btn_phone {
+    position: relative;
+    top: 10%;
+    left: 8%;
   }
 }
+
+
 
 .navbar {
   top: 20%;
@@ -243,14 +247,11 @@ section {
   }
   .nav_wrapper {
     position: relative;
-    float: none;
     @include center;
-    display: inline-block;
     .navbar-nav {
-      float: none;
       li {
         padding: 0 15px;
-        float: right;
+        //float: right;
         &:hover {
           background: $brand-third;
         }
@@ -268,7 +269,7 @@ section {
 }
 
 .about {
-  position: absolute;
+  position: relative;
   width: 100%;
   background: url("../img/fon50.png") no-repeat;
   background-size: cover;
@@ -290,16 +291,23 @@ section {
         display: inline-block;
         position: absolute;
         bottom: 15%;
-        right: 12%;
+        //right: 12%;
         transform: rotate(10deg);
         font-size: 35px;
         color: $brand-black;
-        font-family:  $font-secondary;
+        font-family: $font-secondary;
+        &.st-1, &.st-2 {
+          right: 12%;
+        }
+        &.st-3, &.st-4 {
+          right: 2%;
+        }
       }
     }
   }
   .supply {
     position: relative;
+    bottom: 0;
     width: 1700px;
     height: 1200px;
     background: url("../img/blackboard.png") no-repeat;
@@ -317,5 +325,44 @@ section {
     }
   }
 }
-
+.contacts {
+  position: relative;
+  width: 100%;
+  background: url("../img/scroll.jpg") no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  .b_contacts {
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: $font-4;
+    color: $brand-black;
+    .icon {
+      font-size: 1em;
+      color: $brand-black;
+      padding-right: 10px;
+    }
+  }
+  .b_form {
+    margin: 50px 0;
+    width: 600px;
+    padding: 50px;
+    @include border;
+    border-radius: 20px;
+    @include center;
+    input, textarea {
+      margin-bottom: 30px;
+      background: transparent;
+      color: $brand-black;
+    }
+    input {
+      width: 60%;
+    }
+    textarea {
+      width: 100%;
+    }
+    label {
+      color: $brand-third;
+    }
+  }
+}
 
