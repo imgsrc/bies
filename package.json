@@ -1,0 +1,37 @@
+{
+  "name": "bies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^2.3.2",
+    "node-normalize-scss": "^1.4.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8",
+    "node-normalize-scss": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imgsrc/bies.git"
+  },
+  "author": "esx <nikolaev.i@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imgsrc/bies/issues"
+  },
+  "homepage": "https://github.com/imgsrc/bies#readme"
+}

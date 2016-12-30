@@ -109,8 +109,8 @@ section {
     font-size: 16px;
     text-overflow: ellipsis; }
   .call_modal .btn_phone {
-    position: absolute;
-    margin-left: 10%; }
+    position: relative;
+    margin: 15px 0 0 22%; }
   .call_modal h3 {
     margin-top: 20px;
     font-size: 26px;
@@ -125,8 +125,10 @@ section {
   min-height: 400px;
   background-color: #F5F5DC; }
   .main_header .main_logo {
-    margin: 150px 200px 50px 0; }
+    position: relative;
+    margin: 80px 0 50px 100px; }
   .main_header .main-contacts {
+    position: relative;
     height: 500px;
     background: url(../img/contacts2.svg) no-repeat !important;
     background-size: cover;
@@ -149,7 +151,7 @@ section {
           margin-right: 20px; }
   .main_header .btn_phone {
     position: relative;
-    top: 10%;
+    top: 15%;
     left: 8%; }
 
 .navbar {
@@ -187,34 +189,41 @@ section {
   width: 100%;
   background: url("../img/fon50.png") no-repeat;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
   .about .features {
-    margin: 100px 0;
-    padding-top: 450px; }
+    position: relative;
+    margin-bottom: 100px;
+    padding: 600px 275px 0; }
     .about .features .sticker i {
       position: absolute;
       bottom: 53%;
-      right: 28%;
+      right: 40%;
       z-index: 5;
       color: #0A0A0A;
       font-size: 70px;
       -webkit-transform: rotate(10deg);
           -ms-transform: rotate(10deg);
               transform: rotate(10deg); }
+    .about .features .sticker:last-child i img {
+      position: relative;
+      display: inline-block;
+      width: 90px;
+      left: 25px; }
     .about .features .sticker p {
       display: inline-block;
       position: absolute;
-      bottom: 15%;
+      bottom: 20%;
       -webkit-transform: rotate(10deg);
           -ms-transform: rotate(10deg);
               transform: rotate(10deg);
-      font-size: 35px;
+      font-size: 30px;
       color: #0A0A0A;
       font-family: "Bad Script", cursive; }
       .about .features .sticker p.st-1, .about .features .sticker p.st-2 {
-        right: 12%; }
+        right: 33%; }
       .about .features .sticker p.st-3, .about .features .sticker p.st-4 {
-        right: 2%; }
+        right: 15%; }
   .about .supply {
     position: relative;
     bottom: 0;
@@ -241,7 +250,7 @@ section {
   background-size: cover;
   text-align: center; }
   .contacts .b_contacts {
-    margin-top: 200px;
+    margin-top: 300px;
     font-size: 50px;
     font-family: "Philosopher", sans-serif;
     color: #0A0A0A; }
